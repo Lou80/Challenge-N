@@ -9,7 +9,6 @@
   width: 95%;
   font-weight: 400;
   font-size: 1.35em;
-  padding-right: 500px;
 }
 .data p:nth-of-type(1) {
   color: #c8c8c8;
@@ -35,21 +34,31 @@
   word-spacing: length;
   margin-block-end: 0em;
 }
-.data #price {
+.data #editable_price {
   align-items: baseline;
 }
-.data #price h1 {
+.data #editable_price h1 {
   margin-block-start: 0.4em;
   margin-block-end: 0.3em;
 }
-.data #price b {
+.data #editable_price h1 #price {
+  padding-left: 6px;
+  max-width: 300px;
+  max-height: 38.4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+.data #editable_price b {
   font-weight: 500;
   font-style: italic;
+  position: relative;
+  right: -5px;
 }
-.data #price b #unit {
+.data #editable_price b #unit {
   font-size: 0.9em;
 }
-.data #price b #sq_meter_price {
+.data #editable_price b #sq_meter_price {
   font-size: 1.2em;
 }
 .data .footer {
@@ -61,10 +70,11 @@
   padding-right: -30px;
 }
 .data .footer b {
-  font-size: 0.8em;
+  font-size: 0.9em;
+  width: 70%;
 }
 .data .footer #button {
-  padding-left: 120px;
+  padding-left: 20px;
   font-weight: 500;
   font-size: 1.1em;
   cursor: pointer;
