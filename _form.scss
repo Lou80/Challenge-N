@@ -25,9 +25,11 @@
         
         #send {
             width: 60px;
-            margin-top: 20px;
             margin-left: 85%;
             padding-left: 0;
+            position: fixed;
+            bottom: 228px;
+            left: -128px;
         }
     }
 }
@@ -35,4 +37,8 @@
 ::placeholder {
     color: $header-color;
     font-size: 1.5em;
+}
+
+.invalid {
+    border-bottom: red solid 3px;
 }

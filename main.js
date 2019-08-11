@@ -6,7 +6,8 @@ const heart = document.querySelector('#like');
 localStorage.getItem('like') ? heart.classList.add('red') : '';
 const form = document.getElementById('form');
 const main = document.querySelector('main');
-const body = document.querySelector('body');
+const input = document.querySelector('form input');
+const message = document.getElementById('message');
 
 const format = () => {
 price.innerHTML = parseInt( localStorage.getItem('saved_price') )
@@ -43,8 +44,15 @@ const openForm = () => {
 }
 
 const closeForm = () => {
-   main.classList.remove('opacity');
-
+    const expression = /\S+@\S+/
+    if (expression.test(String(input.value).toLowerCase()) ) {
+    main.classList.remove('opacity');
+    form.classList.add('hidden')
+    } else {
+        input.classList.add('invalid');
+        message.classList.remove('hidden');
+    }
+    
 }
 
 var slideIndex = 1;
