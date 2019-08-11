@@ -4,6 +4,13 @@
 
 body {
     font-family: 'Roboto';
+    position: absolute;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    margin-top: 200px;
 }
 
 .flex {
@@ -21,7 +28,7 @@ body {
     border: solid 1px $border-color;
     box-shadow: 2px 3px 3px $subtitle-color;
     margin: auto;
-    margin-top: 50px;
+    background-color: white;
 
         .image {
             width: 40%;
@@ -73,3 +80,49 @@ body {
     font-size: 1.1em;
     cursor: pointer;
 }
+
+.opacity {
+    opacity: 0.3;
+}
+
+.slideshow-container {
+    height: 100%;
+}
+
+.mySlides {
+    display: none;
+    height: 100%;
+    img {
+        height: 100%;
+    }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }

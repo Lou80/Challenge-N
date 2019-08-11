@@ -15,8 +15,34 @@
     <main>
         <div class="post flex">
             <div class="image">
-                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/94/21/23/1200x1200/1700869906.jpg"
-                    alt="apartment" />
+                <div class="slideshow-container">
+
+
+                    <div class="mySlides fade">
+                        <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/94/21/23/1200x1200/1700869906.jpg"
+                            style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/94/21/23/1200x1200/1700869914.jpg"
+                            style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/94/21/23/1200x1200/1700869905.jpg"
+                            style="width:100%">
+
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+
                 <div class="tag">Super destacado</div>
                 <div class="fa-stack fa-lg">
                     <i class="far fa-heart fa-stack-2x" style="color:white;font-size:36px"></i>
@@ -50,15 +76,16 @@
             </div>
 
         </div>
-        <div id="form" class="post flex">
-            <h3 class="blue">Para ser contactado por favor ingrese su dirección de correo electrónico.</h3>
-            <form>
-                <p>Email</p>
-                <input class="pad10" type="text" placeholder="myemail@gmail.com">
-                <p id="send" class="blue button" onclick="closeForm()">ENVIAR</p>
-            </form>
-        </div>
+
     </main>
+    <div id="form" class="post flex hidden">
+        <h3 class="blue">Para ser contactado por favor ingrese su dirección de correo electrónico.</h3>
+        <form>
+            <p>Email</p>
+            <input class="pad10" type="email" placeholder="myemail@gmail.com">
+            <p id="send" class="blue button" onclick="closeForm()">ENVIAR</p>
+        </form>
+    </div>
     <script src="main.js"></script>
 </body>
 

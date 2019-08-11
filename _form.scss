@@ -2,6 +2,9 @@
     flex-direction: column;
     height: 220px;
     max-width: 750px;
+    z-index: 20;
+    position: relative;
+    top: -217px;
     h3 {
         font-size: 1.3em;
         font-weight: 400;
@@ -21,7 +24,7 @@
             }
         
         #send {
-            width: 80px;
+            width: 60px;
             margin-top: 20px;
             margin-left: 85%;
             padding-left: 0;

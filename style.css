@@ -76,6 +76,9 @@
   flex-direction: column;
   height: 220px;
   max-width: 750px;
+  z-index: 20;
+  position: relative;
+  top: -217px;
 }
 #form h3 {
   font-size: 1.3em;
@@ -94,7 +97,7 @@
   border-right: none;
 }
 #form form #send {
-  width: 80px;
+  width: 60px;
   margin-top: 20px;
   margin-left: 85%;
   padding-left: 0;
@@ -107,6 +110,13 @@
 
 body {
   font-family: "Roboto";
+  position: absolute;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  margin-top: 200px;
 }
 
 .flex {
@@ -124,7 +134,7 @@ body {
   border: solid 1px #f5f5f5;
   box-shadow: 2px 3px 3px #c8c8c8;
   margin: auto;
-  margin-top: 50px;
+  background-color: white;
 }
 .post .image {
   width: 40%;
@@ -180,6 +190,54 @@ body {
   font-weight: 500;
   font-size: 1.1em;
   cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+.slideshow-container {
+  height: 100%;
+}
+
+.mySlides {
+  display: none;
+  height: 100%;
+}
+.mySlides img {
+  height: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
