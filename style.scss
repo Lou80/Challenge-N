@@ -1,5 +1,6 @@
 @import '_colors.scss';
 @import '_data.scss';
+@import '_form.scss';
 
 body {
     font-family: 'Roboto';
@@ -20,7 +21,7 @@ body {
     border: solid 1px $border-color;
     box-shadow: 2px 3px 3px $subtitle-color;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 50px;
 
         .image {
             width: 40%;
@@ -62,4 +63,13 @@ body {
 }
 .red {
     color: red;
+}
+.hidden {
+    display: none;
+}
+.button {
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
 }

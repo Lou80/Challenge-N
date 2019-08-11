@@ -1,0 +1,35 @@
+#form {
+    flex-direction: column;
+    height: 220px;
+    max-width: 750px;
+    h3 {
+        font-size: 1.3em;
+        font-weight: 400;
+        text-align: center;
+    }
+    form {
+        p {
+            margin-left: 40px;
+        }
+        input {
+            width: 90%;
+            height: 30px;
+            margin-left: 40px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            }
+        
+        #send {
+            width: 80px;
+            margin-top: 20px;
+            margin-left: 85%;
+            padding-left: 0;
+        }
+    }
+}
+
+::placeholder {
+    color: $header-color;
+    font-size: 1.5em;
+}
