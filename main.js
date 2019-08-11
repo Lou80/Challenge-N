@@ -1,5 +1,5 @@
 const price = document.getElementById('price');
-localStorage.setItem('saved_price', '1400000');
+localStorage.getItem('saved_price') ? '' : localStorage.setItem('saved_price', '1400000');
 const sqMeters = document.getElementById('sq_meters');
 
 const format = () => {
@@ -11,7 +11,12 @@ format();
 
 const calculate = () => {
     const result = localStorage.getItem('saved_price') / sqMeters.innerHTML;
-    document.getElementById('sq_meter_price').innerHTML = parseInt(result);
+    const sqMeterPrice = document.getElementById('sq_meter_price');
+    if (result >= 1) {
+        sqMeterPrice.innerHTML = parseInt(result);
+    } else {
+        sqMeterPrice.innerHTML;
+    }
 }
 calculate();
 
