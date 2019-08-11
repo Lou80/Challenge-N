@@ -15,26 +15,34 @@
     <main>
         <div class="post flex">
             <div class="image">
-                <img src="" alt="apartment"/>
-                    <div>cualquier cosa</div>
+                <img src="https://imgar.zonapropcdn.com/avisos/resize/1/00/44/94/21/23/1200x1200/1700869906.jpg"
+                    alt="apartment" />
+                <div class="tag">Super destacado</div>
+                <div class="fa-stack fa-lg">
+                        <i class="far fa-heart fa-stack-2x" style="color:white;font-size:36px"></i>
+                        <i class="fas fa-heart fa-stack-1x" style="font-size: 30px;position: absolute; top:-3px"></i>
+                </div>
             </div>
             
             <div class="data">
-                <h2 class="blue">Hermoso Piso a la calle con 2 Cocheras y 2 Baños situado en Palermo</h2>
-                <p><i class="fas fa-map-marker-alt"></i><b> Juan Francisco Seguí 3900,</b> Palermo Chico, Palermo</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ornare netus fringilla,
-                venenatis maecenas facilisi euismod sodales dis fusce ac iaculis convallis,
-                laoreet suscipit varius dui interdum luctus mollis sem praesent.</p>
-                <div class="flex" id="editable_price">
+                <h2 class="blue padded">Hermoso Piso a la calle con 2 Cocheras y 2 Baños situado en Palermo</h2>
+                <p class="padded"><i class="fas fa-map-marker-alt"></i><b> Juan Francisco Seguí 3900,</b> Palermo Chico,
+                    Palermo</p>
+                <p class="padded">Lorem ipsum dolor sit amet consectetur adipiscing elit ornare netus fringilla,
+                    venenatis maecenas facilisi euismod sodales dis fusce ac iaculis convallis,
+                    laoreet suscipit varius dui interdum luctus mollis sem praesent.</p>
+                <div class="flex padded" id="editable_price">
                     <h1 class="gray flex">
                         <span>U$S</span>
                         <div id="price" contenteditable="true" oninput="setStorage()">1400000</div>
                     </h1>
-                    <b><span class="padded blue" id="unit">$/m²</span><span id="sq_meter_price" class="blue padded"></span></b>
+                    <b><span class="padded blue" id="unit">$/m²</span><span id="sq_meter_price"
+                            class="blue pad10"></span></b>
                 </div>
                 <div class="footer">
                     <b class="gray"><span class="padded" id="sq_meters">380</span><span> m2</span>
-                        <span class="padded">3 Dormitorios</span><span class="padded">2 Baños</span><span class="padded">2 Cocheras</span>
+                        <span class="pad10">3 Dormitorios</span><span class="pad10">2 Baños</span><span class="pad10">2
+                            Cocheras</span>
                     </b>
                     <span id="button" class="blue">CONTACTAR</span>
                 </div>
@@ -44,4 +52,5 @@
     </main>
     <script src="main.js"></script>
 </body>
+
 </html>

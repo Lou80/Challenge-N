@@ -24,11 +24,39 @@ body {
 
         .image {
             width: 40%;
-        }
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            .tag {
+                color: white;
+                font-weight: 500;
+                font-size: 1.1em;
+                background-color: $tag-color;
+                z-index: 10;
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                height: 30px;
+                width: 170px;
+                text-align: center;
+                padding-top: 7px;
+            }
+            .fa-stack{
+                z-index: 10;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        } 
   }
 .blue {
     color: $header-color;
 }
 .padded {
+    padding-left: 20px;
+}
+.pad10 {
     padding-left: 10px;
 }
