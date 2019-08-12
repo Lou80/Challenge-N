@@ -8,6 +8,7 @@ const form = document.getElementById('form');
 const main = document.querySelector('main');
 const input = document.querySelector('form input');
 const message = document.getElementById('message');
+const success = document.querySelector('main .success');
 
 const format = () => {
     price.innerHTML = parseInt(localStorage.getItem('saved_price'))
@@ -48,7 +49,8 @@ const closeForm = () => {
     const expression = /\S+@\S+/
     if (expression.test(String(input.value).toLowerCase())) {
         main.classList.remove('opacity');
-        form.classList.add('hidden')
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
     } else {
         input.classList.add('invalid');
         message.classList.remove('hidden');

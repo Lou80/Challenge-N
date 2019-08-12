@@ -48,3 +48,97 @@ main {
 .opacity {
     opacity: 0.3;
 }
+
+.success {
+    color: green;
+    font-size: 0.9em;
+    font-style: italic;
+    padding-left: 70%;
+}
+
+
+@media only screen and (max-width: 834px) {
+
+main {
+    margin-top: 20px;
+    .post {
+        flex-direction: column;
+        max-width: 414px;
+        min-width: 320px;
+        height: 100%;
+        .image {
+            width: 100%;
+        }
+        .data {
+            width: 100%;
+            h2 {
+                text-overflow: unset;
+                white-space: normal;
+                overflow: visible;
+                margin-block-start: 0%;
+            }
+            p {
+                width: 90%;
+            }
+            #editable_price {
+                height: 10px;
+                h1 {
+                    color: white;
+                    position: relative;
+                    top: -325px;
+                }
+                b {
+                display: none;
+                }
+            }
+            .footer {
+                background-color: white;
+                display: inline;
+                b {
+                    color: white;
+                    position: relative;
+                    bottom:280px;
+                }
+                .button {
+                    padding-left: 260px; 
+                    position: relative;
+                    bottom: 20px;
+                }
+            }       
+        }
+    }
+}
+#form {
+    max-width: 414px;
+    min-width: 320px;
+    height: 250px;
+    top: -386px;
+    form {
+        #bottom #message {
+            width: 100%;
+        }
+        #send {
+            margin-left: 70%;
+        }
+    }
+}
+.success {
+    padding-left: 35%;
+}
+
+}
+
+@media only screen and (max-width: 414px) {
+    main .post .data .footer b {
+        bottom: 354px;
+        #sq_meters {
+            padding-left: 5px;
+        }
+    }
+    main .post .data #editable_price h1 {
+        top: -397px;
+    }
+    main .post .data .footer .button {
+        padding-left: 192px;
+    }
+}
