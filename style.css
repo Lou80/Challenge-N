@@ -73,7 +73,6 @@
 }
 
 #form {
-  flex-direction: column;
   height: 220px;
   max-width: 750px;
   z-index: 20;
@@ -85,24 +84,29 @@
   font-weight: 400;
   text-align: center;
 }
-#form form p {
-  margin-left: 40px;
+#form form {
+  padding-left: 40px;
 }
 #form form input {
   width: 90%;
   height: 30px;
-  margin-left: 40px;
   border-top: none;
   border-left: none;
   border-right: none;
+}
+#form form #bottom {
+  min-height: 30px;
+}
+#form form #bottom #message {
+  margin-block-end: 0%;
+  width: 50%;
+  margin-top: 10px;
 }
 #form form #send {
   width: 60px;
   margin-left: 85%;
   padding-left: 0;
-  position: fixed;
-  bottom: 228px;
-  left: -128px;
+  margin-block-start: 0px;
 }
 
 ::placeholder {
@@ -112,25 +116,6 @@
 
 .invalid {
   border-bottom: red solid 3px;
-}
-
-body {
-  font-family: "Roboto";
-  position: absolute;
-  width: 100%;
-}
-
-main {
-  height: 100%;
-  margin-top: 200px;
-}
-
-.flex {
-  display: flex;
-}
-
-.gray {
-  color: #323232;
 }
 
 .post {
@@ -171,37 +156,6 @@ main {
   right: 10px;
 }
 
-.blue {
-  color: #1ea7dd;
-}
-
-.padded {
-  padding-left: 20px;
-}
-
-.pad10 {
-  padding-left: 10px;
-}
-
-.red {
-  color: red;
-}
-
-.hidden {
-  display: none;
-}
-
-.button {
-  padding-left: 20px;
-  font-weight: 500;
-  font-size: 1.1em;
-  cursor: pointer;
-}
-
-.opacity {
-  opacity: 0.3;
-}
-
 .slideshow-container {
   height: 100%;
 }
@@ -238,12 +192,54 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+body {
+  font-family: "Roboto";
   position: absolute;
-  top: 0;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  margin-top: 200px;
+}
+
+.flex {
+  display: flex;
+}
+
+.gray {
+  color: #323232;
+}
+
+.blue {
+  color: #1ea7dd;
+}
+
+.padded {
+  padding-left: 20px;
+}
+
+.pad10 {
+  padding-left: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=style.css.map */

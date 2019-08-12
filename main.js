@@ -10,11 +10,10 @@ const input = document.querySelector('form input');
 const message = document.getElementById('message');
 
 const format = () => {
-price.innerHTML = parseInt( localStorage.getItem('saved_price') )
-.toLocaleString('es-AR');
+    price.innerHTML = parseInt(localStorage.getItem('saved_price'))
+        .toLocaleString('es-AR');
 }
 format();
-
 
 const calculate = () => {
     const result = localStorage.getItem('saved_price') / sqMeters.innerHTML;
@@ -40,42 +39,41 @@ const setLike = () => {
 const openForm = () => {
     form.classList.remove('hidden');
     main.classList.add('opacity');
-    
+    input.value = '';
+    input.classList.remove('invalid');
+    message.classList.add('hidden');
 }
 
 const closeForm = () => {
     const expression = /\S+@\S+/
-    if (expression.test(String(input.value).toLowerCase()) ) {
-    main.classList.remove('opacity');
-    form.classList.add('hidden')
+    if (expression.test(String(input.value).toLowerCase())) {
+        main.classList.remove('opacity');
+        form.classList.add('hidden')
     } else {
         input.classList.add('invalid');
         message.classList.remove('hidden');
     }
-    
 }
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  
-  slides[slideIndex-1].style.display = "block"; 
-  
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
 }

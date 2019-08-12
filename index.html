@@ -78,12 +78,14 @@
         </div>
 
     </main>
-    <div id="form" class="post flex hidden">
+    <div id="form" class="post hidden">
         <h3 class="blue">Para ser contactado por favor ingrese su dirección de correo electrónico.</h3>
         <form>
             <p>Email</p>
             <input class="pad10" type="email" placeholder="myemail@gmail.com">
-            <p id="message"class="hidden red"><b>Por favor ingrese un email válido</b></p>
+            <div id="bottom">
+                <p id="message" class="hidden red"><b>Por favor ingrese un email válido</b></p>
+            </div>
             <p id="send" class="blue button" onclick="closeForm()">ENVIAR</p>
         </form>
     </div>
